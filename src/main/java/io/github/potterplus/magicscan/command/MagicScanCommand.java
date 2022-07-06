@@ -3,10 +3,8 @@ package io.github.potterplus.magicscan.command;
 import com.google.common.collect.ImmutableMap;
 import io.github.potterplus.api.command.CommandBase;
 import io.github.potterplus.api.command.CommandContext;
-import io.github.potterplus.api.string.StringUtilities;
 import io.github.potterplus.magicscan.MagicScanController;
 import io.github.potterplus.magicscan.MagicScanPlugin;
-import io.github.potterplus.magicscan.command.sub.*;
 import io.github.potterplus.magicscan.magic.MagicMob;
 import io.github.potterplus.magicscan.magic.MagicPath;
 import io.github.potterplus.magicscan.magic.MagicSpell;
@@ -22,6 +20,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
+import static io.github.potterplus.api.string.StringUtilities.color;
 import static io.github.potterplus.api.string.StringUtilities.equalsAny;
 import static org.apache.commons.lang.StringUtils.startsWithIgnoreCase;
 
@@ -37,7 +36,7 @@ public class MagicScanCommand extends CommandBase<MagicScanPlugin> {
     }
 
     public static List<String> getHelp() {
-        return StringUtilities.color(
+        return color(
                 "  &8>> &d/ms Help",
                 "  &a[Optional Arg] &c<Required Arg> &3--Optional Flag",
                 "  &8/&7ms help &8> &6Brings up these options",
@@ -60,7 +59,7 @@ public class MagicScanCommand extends CommandBase<MagicScanPlugin> {
     }
 
     public static String createUsage(String usage) {
-        return StringUtilities.color("&dMS&5> &cUsage&8: &4" + usage + "&8. &cDo &4/ms ? &cfor help&8.");
+        return color("&dMS&5> &cUsage&8: &4" + usage + "&8. &cDo &4/ms ? &cfor help&8.");
     }
 
     @Override

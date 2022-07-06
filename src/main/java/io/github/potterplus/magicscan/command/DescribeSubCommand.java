@@ -1,4 +1,4 @@
-package io.github.potterplus.magicscan.command.sub;
+package io.github.potterplus.magicscan.command;
 
 import com.google.common.collect.ImmutableMap;
 import io.github.potterplus.api.command.CommandBase;
@@ -6,7 +6,6 @@ import io.github.potterplus.api.command.CommandContext;
 import io.github.potterplus.api.command.CommandFlag;
 import io.github.potterplus.magicscan.MagicScanController;
 import io.github.potterplus.magicscan.MagicScanPlugin;
-import io.github.potterplus.magicscan.command.MagicScanCommand;
 import io.github.potterplus.magicscan.gui.describable.ListDescribablesGUI;
 import io.github.potterplus.magicscan.gui.describable.describe.*;
 import io.github.potterplus.magicscan.magic.MagicMob;

@@ -47,11 +47,6 @@
         </repository>
 
         <repository>
-            <id>sonatype</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </repository>
-
-        <repository>
             <id>elmakers</id>
             <url>https://maven.elmakers.com/repository/</url>
         </repository>
@@ -82,9 +77,9 @@
         </dependency>
 
         <dependency>
-            <groupId>io.github.potterplus.api</groupId>
-            <artifactId>PotterPlusAPI</artifactId>
-            <version>1.0.7-SNAPSHOT</version>
+            <groupId>com.elmakers.mine.bukkit</groupId>
+            <artifactId>MagicAPI</artifactId>
+            <version>8.4</version>
         </dependency>
 
         <dependency>
@@ -97,6 +92,19 @@
             <groupId>com.github.marcoacierno</groupId>
             <artifactId>pastebin-java-api</artifactId>
             <version>v0.2.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.ocpsoft.prettytime</groupId>
+            <artifactId>prettytime</artifactId>
+            <version>5.0.0.Final</version>
         </dependency>
     </dependencies>
 
