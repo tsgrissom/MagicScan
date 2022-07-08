@@ -1,6 +1,5 @@
 package io.github.potterplus.magicscan;
 
-import io.github.potterplus.api.misc.PluginLogger;
 import io.github.potterplus.api.ui.UserInterface;
 import io.github.potterplus.magicscan.command.MagicScanCommand;
 import io.github.potterplus.magicscan.listener.QuitListener;
@@ -16,8 +15,6 @@ import org.bukkit.plugin.java.annotation.command.Command;
 import org.bukkit.plugin.java.annotation.command.Commands;
 import org.bukkit.plugin.java.annotation.dependency.Dependency;
 import org.bukkit.plugin.java.annotation.dependency.DependsOn;
-import org.bukkit.plugin.java.annotation.dependency.SoftDependency;
-import org.bukkit.plugin.java.annotation.dependency.SoftDependsOn;
 import org.bukkit.plugin.java.annotation.permission.ChildPermission;
 import org.bukkit.plugin.java.annotation.permission.Permission;
 import org.bukkit.plugin.java.annotation.permission.Permissions;
@@ -36,9 +33,6 @@ import org.bukkit.plugin.java.annotation.plugin.author.Author;
 @Website("https://github.com/PotterPlus/MagicScan")
 @DependsOn({
         @Dependency("Magic")
-})
-@SoftDependsOn({
-        @SoftDependency("PotterPlusAPI")
 })
 @ApiVersion(ApiVersion.Target.v1_13)
 @Commands({
@@ -84,12 +78,7 @@ public class MagicScanPlugin extends JavaPlugin {
 
         pm.registerEvents(new QuitListener(controller), this);
 
-        if (pm.isPluginEnabled("PotterPlusAPI")) {
-            PluginLogger.atInfo("PotterPlusAPI found. Will not prepare UIs to avoid issues.");
-        } else {
-            PluginLogger.atInfo("PotterPlusAPI not found. Preparing user interfaces.");
-            UserInterface.prepare(this);
-        }
+        UserInterface.prepare(this);
 
         this.command = new MagicScanCommand(this);
     }

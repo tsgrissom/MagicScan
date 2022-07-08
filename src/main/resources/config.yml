@@ -1,10 +1,10 @@
-# Whether or not the plugin should queue up a scan for console when the server starts
+# Whether the plugin should queue up a scan for console when the server starts
 create_scan_on_start: true
-# Whether or not the plugin should perform the queued scan automatically when the server starts
+# Whether the plugin should perform the queued scan automatically when the server starts
 perform_scan_on_start: false
-# Whether or not the plugin should load hidden things.
+# Whether the plugin should load hidden things.
 load_hidden: true
-# Whether or not to log loading messages
+# Whether to log loading messages
 verbose: true
 # The date format to use in text
 date_format: "yyyy/MM/dd HH:mm:ss"
@@ -13,7 +13,7 @@ inactive_scan_timeout: 4800
 # How many ticks to wait between displaying text elements
 interval: 5
 
-# Whether or not the enable the Pastebin integration
+# Whether to enable the Pastebin integration
 pastebin_integration: false
 # Replace with your Pastebin dev key
 pastebin_key: "XXX"

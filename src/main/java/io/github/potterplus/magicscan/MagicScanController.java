@@ -184,7 +184,6 @@ public class MagicScanController {
             PluginLogger.atInfo("[MagicScan] Successfully integrated with Magic API.");
         } else {
             PluginLogger.atSevere("[MagicScan] Failed to integrate with Magic API! MagicScan has been disabled! Please install Magic to use MagicScan.");
-
             getPlugin().getServer().getPluginManager().disablePlugin(plugin);
         }
 
