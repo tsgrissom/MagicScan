@@ -5,6 +5,7 @@ import io.github.potterplus.api.command.CommandBase;
 import io.github.potterplus.api.command.CommandContext;
 import io.github.potterplus.magicscan.MagicScanController;
 import io.github.potterplus.magicscan.MagicScanPlugin;
+import io.github.potterplus.magicscan.command.sub.*;
 import io.github.potterplus.magicscan.magic.MagicMob;
 import io.github.potterplus.magicscan.magic.MagicPath;
 import io.github.potterplus.magicscan.magic.MagicSpell;

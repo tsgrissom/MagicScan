@@ -1,4 +1,4 @@
-package io.github.potterplus.magicscan.command;
+package io.github.potterplus.magicscan.command.sub;
 
 import com.google.common.collect.ImmutableMap;
 import io.github.potterplus.api.command.CommandBase;

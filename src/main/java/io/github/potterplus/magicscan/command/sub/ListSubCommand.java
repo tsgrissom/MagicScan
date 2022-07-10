@@ -1,4 +1,4 @@
-package io.github.potterplus.magicscan.command;
+package io.github.potterplus.magicscan.command.sub;
 
 import io.github.potterplus.api.command.CommandBase;
 import io.github.potterplus.api.command.CommandContext;
@@ -7,6 +7,7 @@ import io.github.potterplus.api.item.Icon;
 import io.github.potterplus.api.ui.prompt.ConfirmPrompt;
 import io.github.potterplus.magicscan.MagicScanController;
 import io.github.potterplus.magicscan.MagicScanPlugin;
+import io.github.potterplus.magicscan.command.MagicScanCommand;
 import io.github.potterplus.magicscan.gui.describable.list.*;
 import io.github.potterplus.magicscan.gui.prompt.DescribeLargeCollectionConfirmPrompt;
 import io.github.potterplus.magicscan.task.DescribeCollectionTask;

@@ -34,6 +34,7 @@ list_filters:
     - "key"
 
 # BetterPotter RP "iron_axe{CustomModelData:#}"
+# Replace # with corresponding custom model data number
 #  {"predicate": {"custom_model_data":1}, "model":"item/bp/symbols/arrow_down"},
 #  {"predicate": {"custom_model_data":2}, "model":"item/bp/symbols/arrow_left"},
 #  {"predicate": {"custom_model_data":3}, "model":"item/bp/symbols/arrow_right"},

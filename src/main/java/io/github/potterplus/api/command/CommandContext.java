@@ -171,6 +171,14 @@ public class CommandContext {
         return args[arg];
     }
 
+    public boolean hasArgs() {
+        return args.length != 0;
+    }
+
+    public boolean hasNoArgs() {
+        return args.length == 0;
+    }
+
     /**
      * Concatenates a phrase with spaces between each argument beginning at the supplied index.
      * @param startingArgs The argument to start building the phrase at.

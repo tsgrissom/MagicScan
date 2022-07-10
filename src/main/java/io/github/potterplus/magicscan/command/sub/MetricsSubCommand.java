@@ -1,4 +1,4 @@
-package io.github.potterplus.magicscan.command;
+package io.github.potterplus.magicscan.command.sub;
 
 import io.github.potterplus.api.command.CommandBase;
 import io.github.potterplus.api.command.CommandContext;
