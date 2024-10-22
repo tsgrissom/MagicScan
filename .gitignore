@@ -1,0 +1,10 @@
+# OS
+.DS_Store
+
+# IDEA
+.idea/
+target/
+MagicScan.iml
+
+# Maven
+dependency-reduced-pom.xml

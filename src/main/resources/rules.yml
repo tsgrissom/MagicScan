@@ -1,0 +1,40 @@
+spells:
+  # The spell categories to exclude from scanning.
+  exclude_categories:
+    - "specialty"
+    - "staff"
+    - "npc"
+  # Enable/disable and adjust each rule to your liking.
+  rules:
+    actions:
+      enabled: true
+    category:
+      enabled: true
+    cooldown:
+      enabled: true
+    description:
+      enabled: true
+    key:
+      enabled: true
+      enforce_no_underscores: true
+      enforce_no_caps: true
+      enforce_no_numbers: true
+    icon:
+      enabled: true
+    icon_disabled:
+      enabled: true
+    levels:
+      enabled: true
+    mana_match_path:
+      enabled: true
+    mana:
+      enabled: true
+      fallback_active_costs: true
+    name:
+      enabled: true
+    path:
+      enabled: true
+    upgrade_description:
+      enabled: true
+    upgrade_pair:
+      enabled: true

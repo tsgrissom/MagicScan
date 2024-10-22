@@ -1,0 +1,72 @@
+# Whether the plugin should queue up a scan for console when the server starts
+create_scan_on_start: true
+# Whether the plugin should perform the queued scan automatically when the server starts
+perform_scan_on_start: false
+# Whether the plugin should load hidden things.
+load_hidden: true
+# Whether to log loading messages
+verbose: true
+# The date format to use in text
+date_format: "yyyy/MM/dd HH:mm:ss"
+# How many ticks before a created queued scan is determined to be inactive and removed from the queue.
+inactive_scan_timeout: 4800
+# How many ticks to wait between displaying text elements
+interval: 5
+
+# Whether to enable the Pastebin integration
+pastebin_integration: false
+# Replace with your Pastebin dev key
+pastebin_key: "XXX"
+
+# The default scan rule types
+default_rule_types:
+  - "spells"
+
+# Filter out types by key from listings
+list_filters:
+  spells:
+    - "key"
+  wands:
+    - "flyingcarpet"
+  paths:
+    - "key"
+  mobs:
+    - "key"
+
+# BetterPotter RP "iron_axe{CustomModelData:#}"
+# Replace # with corresponding custom model data number
+#  {"predicate": {"custom_model_data":1}, "model":"item/bp/symbols/arrow_down"},
+#  {"predicate": {"custom_model_data":2}, "model":"item/bp/symbols/arrow_left"},
+#  {"predicate": {"custom_model_data":3}, "model":"item/bp/symbols/arrow_right"},
+#  {"predicate": {"custom_model_data":4}, "model":"item/bp/symbols/arrow_up"},
+#  {"predicate": {"custom_model_data":5}, "model":"item/bp/symbols/ac"},
+#  {"predicate": {"custom_model_data":6}, "model":"item/bp/symbols/cc"},
+#  {"predicate": {"custom_model_data":7}, "model":"item/bp/symbols/ellipses"},
+#  {"predicate": {"custom_model_data":8}, "model":"item/bp/symbols/exclamation_gold"},
+#  {"predicate": {"custom_model_data":9}, "model":"item/bp/symbols/exclamation_white"},
+#  {"predicate": {"custom_model_data":10}, "model":"item/bp/symbols/no"},
+#  {"predicate": {"custom_model_data":11}, "model":"item/bp/symbols/yes"},
+#  {"predicate": {"custom_model_data":12}, "model":"item/bp/symbols/mxp"},
+#  {"predicate": {"custom_model_data":13}, "model":"item/bp/symbols/question_gold"},
+#  {"predicate": {"custom_model_data":14}, "model":"item/bp/symbols/question_white"}
+# Material mappings for GUIs
+materials:
+  confirm: "iron_axe{CustomModelData:11}"
+  deny: "iron_axe{CustomModelData:10}"
+  up: "iron_axe{CustomModelData:4}"
+  right: "iron_axe{CustomModelData:3}"
+  down: "iron_axe{CustomModelData:1}"
+  left: "iron_axe{CustomModelData:2}"
+  back: "iron_axe{CustomModelData:2}"
+  enabled: "GREEN_STAINED_GLASS"
+  disabled: "RED_STAINED_GLASS"
+  enable: "EMERALD"
+  disable: "REDSTONE"
+  navigation: "MAP"
+  info: "NAME_TAG"
+  attribute: "PAPER"
+  empty: "BARRIER"
+  time: "CLOCK"
+  edit: "WRITABLE_BOOK"
+  toggle: "NETHER_STAR"
+  cycle: "MAP"

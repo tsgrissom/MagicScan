@@ -1,0 +1,250 @@
+violations:
+  spells:
+    actions: "  &cHas unmatched parameters (&4$param&c)"
+    category: "  &cInvalid spell category"
+    cooldown: "  &cCooldown is less than or equal to zero"
+    description: "  &cDoes not have a description"
+    icon: "  &cDoes not have an icon"
+    icon_disabled: "  &cDoes not have a disabled icon"
+    key_underscore: "  &cKey contains an underscore"
+    key_uppercase: "  &cKey contains an uppercase letter"
+    key_number: "  &cKey contains a number"
+    levels: "  &cDoes not have leveling/progression"
+    mana_match_path: "  &cMana cost exceeds max mana of path"
+    mana: "  &cMana cost is less than or equal to zero"
+    name: "  &cDoes not have a display name"
+    path: "  &cNot contained in a path"
+    upgrade_description: "  &cDoes not have an upgrade_description message"
+    upgrade_pair_path: "  &cDoes not have an &4`upgrade_required_path`"
+    upgrade_pair_casts: "  &cDoes not have an &4`upgrade_required_casts`"
+
+spells_header: "&7Spell&8: &e$spell &7($violations violations)"
+spells_no_issues: "&aNo issues found with spell templates."
+spells_found_issues: "&cFound &4$violations &cissues across &4$invalid &cspell templates."
+spells_passed: "&2$valid &aspells passed all checks."
+
+describing_things: "&dMS&5> &7Describing &e$amount &7things&8..."
+
+scan_queued: "&dMS&5> &7Your scan has been queued&8. &7Do &e/mss manage &7to manage it&8."
+scan_deleted: "&dMS&5> &cYour scan has been deleted."
+scan_deleted_other: "&dMS&5> &7You deleted &e$name's &7scan&8."
+scans_cleared: "&dMS&5> &7You cleared all of the currently queued scans&8."
+scans_not_cleared: "&dMS&5> &7You did not clear the current scans&8. &7Do &e/mss list &7to view them&8."
+previous_scan_deleted: "&dMS&5> &cYour previous scan has been deleted&8."
+scan_not_deleted: "&dMS&5> &7Your scan has not been deleted&8. &7Manage it with &e/mss manage&8."
+scan_not_deleted_other: "&dMS&5> &7You did not delete &e$name's &7scan."
+scan_timed_out: "&dMS&5> &cYour scan has timed out&8."
+scan_cleared: "&dMS&5> &cYour scan was forcibly cleared by &4$name&8."
+scan_already_queued_self: "&dMS&5> &7You have already queued a scan&8. &7Do &e/mss manage &7to manage it&8."
+scan_time: "&dMS&5> &7Scan completed in &e$times&8."
+scan_not_executed: "&dMS&5> &7You did not execute your scan&8. &7Do &e/mss manage &7to manage it&8."
+no_queued_scan: "&dMS&5> &cThere is not a currently queued scan. To create a scan do &4/mss create&c."
+no_queued_scan_other: "&dMS&5> &4$name &cdoes not currently have a scan queued."
+not_meeting_conditions: "&dMS&5> &cYour scan is not meeting conditions to be executed! Do &4/mss manage &cto manage it."
+create_new_scan: "&dMS&5> &7Do &e/mss create &7to create a new scan&8."
+invalid_property: "&dMS&5> &cInvalid scan property! Do &4/mss ? &cfor help."
+scan_property: "&dMS&5> &7Scan property &e$name &7is &r$bool"
+scan_property_updated: "&dMS&5> &7Scan property &e$name &7is now &r$bool"
+scan_auto_queued: "&eA scan has been automatically queued. Do &6/mss execute &eto perform it."
+
+toggled: "&dMS&5> &7Property &e$prop &r$bool"
+rule_toggled: "&dMS &5> &7Rule &e$key &r$bool"
+
+nothing_to_show: "&dMS&5> &cNothing to show."
+no_gui_console: "&cConsole cannot use GUIs."
+no_console: "&cYou cannot do that from console!"
+no_permission: "&cYou don't have permission to do that!"
+no_target: "&cCould not find player &4'$name'"
+specify_target: "&cPlease specify a player name."
+invalid_rule: "&cCannot find rule by the key of &4'$key'"
+invalid_path: "&cCould not resolve path &4'$key'"
+invalid_spell_category: "&cCould not resolve spell category &4'$key'"
+invalid_spell: "&cCould not resolve spell &4'$key'"
+invalid_wand: "&cCould not resolve wand template &4'$key'"
+invalid_action: "&cCould not resolve action &4'$key'"
+invalid_mob: "&cCould not resolve mob &4'$key'"
+unknown_magic_type: "&dMS&5> &cUnknown Magic type &4'$type'&c. Do &4/ms ? &cfor help."
+no_progression: "&cSpell &4'$spell' &cdoes not have progression"
+too_many_things: "&cToo many things! Try a couple less :)"
+only_one_progression: "&dMS&5> &cOnly one progression at a time&8."
+
+pastebin_failed: "&cSomething went wrong while uploading to Pastebin&8: &c$error"
+pastebin_posted: "&dMS&5> &6Uploaded the log to Pastebin&8: &e$url"
+
+gui:
+  list_spells:
+    title: "Spells &6$count"
+    show_hidden_enabled:
+      name: "&aShow Hidden"
+      lore:
+        - "&8> &7Click to disable"
+    show_hidden_disabled:
+      name: "&cShow Hidden"
+      lore:
+        - "&8> &7Click to enable"
+    show_leveled_variants_enabled:
+      name: "&aShow Leveled Variants"
+      lore:
+        - "&8> &7Click to disable"
+    show_leveled_variants_disabled:
+      name: "&cShow Leveled Variants"
+      lore:
+        - "&8> &7Click to enable"
+    show_disabled_icons_enabled:
+      name: "&aShow Disabled Icons"
+      lore:
+        - "&8> &7Click to disable"
+    show_disabled_icons_disabled:
+      name: "&cShow Disabled Icons"
+      lore:
+        - "&8> &7Click to enable"
+    cycle_categories:
+      name: "&7Category&8: &e$currentCategory"
+      lore:
+        - "&8> &6Left-click &7to go up"
+        - "&8> &6Right-click &7to go down"
+        - "&8> &eShift left-click &7to select"
+        - "&8> &aShift right-click &7to jump to top"
+        - ""
+        - "&dCategories&8:"
+      category_line_format: " &8- $cat"
+      other_color: "&7"
+      current_color: "&a"
+    no_spells:
+      name: "&cNo spells found"
+      lore:
+        - "&7Maybe try toggling show hidden?"
+  list_wands:
+    title: "Wands &6$count"
+  list_spell_categories:
+    title: "Categories &6$count"
+  list_paths:
+    title: "Paths &6$count"
+  list_mobs:
+    title: "Mobs &6$count"
+    clear_all:
+      name: "&cClear all Magic mobs"
+      lore:
+        - "&8> &7Click to clear"
+  list_actions:
+    title: "Actions &6$count"
+  describe_action:
+    title: "Action &6$name"
+  describe_mob:
+    title: "Mob &6$key"
+  describe_path:
+    title: "Path &6$key"
+  describe_spell_category:
+    title: "Spell category &6$key"
+  describe_spell_progression:
+    title: "Progression of &6$key"
+    arrow:
+      name: "&7--->"
+  describe_spell:
+    title: "Spell &6$key"
+  describe_wand:
+    title: "Wand &6$key"
+  describing_actions:
+    title: "Actions"
+  describing_mobs:
+    title: "Mobs"
+  describing_paths:
+    title: "Paths"
+  describing_spell_categories:
+    title: "Spell Categories"
+  describing_spells:
+    title: "Spells"
+  describing_wands:
+    title: "Wands"
+  list_scans:
+    title: "Queued Scans"
+  manage_scan:
+    title: "Manage Scan"
+    execute_ready:
+      name: "&aExecute (Meeting Conditions)"
+      lore:
+        - "&8> &7Click to execute"
+    execute_not_ready:
+      name: "&cExecute (Not Meeting Conditions)"
+      lore:
+        - ""
+    time:
+      name: "&7Created at &e$time"
+    enabled_toggle:
+      lore:
+        - "&8> &7Click to disable"
+    disabled_toggle:
+      lore:
+        - "&8> &7Click to enable"
+    log_to_file_enabled:
+      name: "&aLog to file"
+    log_to_file_disabled:
+      name: "&cLog to file"
+    scan_all_rule_types_enabled:
+      name: "&aScan all rule types"
+    scan_all_rule_types_disabled:
+      name: "&cScan all rule types"
+    scan_hidden_enabled:
+      name: "&aScan hidden"
+    scan_hidden_disabled:
+      name: "&cScan hidden"
+    visual_enabled:
+      name: "&aDisplay visually"
+    visual_disabled:
+      name: "&cDisplay visually"
+    edit_rules:
+      name: "&eEdit Rules"
+      lore:
+        - "&8> &7Click to edit the rules"
+      lore_line_format: "&8- &d$type&8.&7$rule&8: &r$bool"
+  rule_list_edit:
+    title: "Edit Rules"
+    spell_rules:
+      name: "&7Spell Rules"
+      lore_line_format: "&8- &7$rule&8: &r$bool"
+    enable_all:
+      name: "&aEnable all"
+      lore:
+        - "&8> &7Click to enable all rules"
+    disable_all:
+      name: "&cDisable all"
+      lore:
+        - "&8> &7Click to disable all rules"
+    toggle_all:
+      name: "&eToggle all"
+      lore:
+        - "&8> &7Click to toggle all rules"
+    return:
+      name: "&eReturn to previous page"
+      lore:
+        - "&8> &7Click to return to the previous page"
+    spell_rule_disabled:
+      name: "&cSpell Rule &e$rule"
+      lore:
+        - "&8> &aLeft-click &7to enable"
+        - "&8> &6Right-click &7to only use this rule"
+    spell_rule_enabled:
+      name: "&aSpell Rule &e$rule"
+      lore:
+        - "&8> &cLeft-Click &7to disable"
+        - "&8> &6Right-click &7to only use this rule"
+  scan_results:
+    title: "Scan Results"
+    sort_by:
+      name: "&7Sort by &3$sortBy"
+      lore:
+        - "&8> &7Click to cycle"
+    time:
+      name: "&7Completed in &e$elapsedTime"
+    totals:
+      name: "&7Result totals"
+      lore:
+        - "&2$validSpellCount &aspells passed all checks"
+        - "&cFound &4$violationsCount &cpotential issues across &4$invalidSpellCount &cspells."
+    violation:
+      lore:
+        - "&6$violationsCount total violations"
+    pastebin_url:
+      name: "&&Posted to Pastebin"
+      lore:
+        - "&8> &7Click to view link"
