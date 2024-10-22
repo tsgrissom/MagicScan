@@ -1,14 +1,6 @@
-# MagicScan
+# MagicScan Plugin
 
-Scans configurations for potential issues and provides deeper analytics for [NathanWolf's Magic plugin](https://github.com/elBukkit/MagicPlugin) to ensure you have the cleanest, working-as-intended setup as possible.
-
-## Commands
-
-To do
-
-## Permissions
-
-To do
+Analyzes the configuration of [NathanWolf's Magic plugin](https://github.com/elBukkit/MagicPlugin) for potential issues and oversights.
 
 ## Configuration
 
